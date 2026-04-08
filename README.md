@@ -21,7 +21,7 @@ This library assumes a standard 4-digit multiplexed configuration. The segments 
 
 
 
-![Wiring Diagram](C:\Users\USER\Downloads\Telegram_Desktop\photo_2026-04-08_16-36-53.jpg)
+![Wiring Diagram](resource\photo_2026-04-08_16-36-53.jpg)
 
 
 ### Connection Mapping
