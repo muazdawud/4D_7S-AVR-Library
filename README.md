@@ -2,7 +2,7 @@
 
 A high-performance, interrupt-driven C library for multiplexing **4-digit 7-segment displays** on AVR-based microcontrollers. Designed for low CPU overhead and flicker-free operation using Timer 2 SFR. *(Also applicable with Arduino microcontrollers but not yet set)*
 
-> *See `/examples` root which compiles with not more than 850 bytes of flash size.*
+> *See `/examples` root for an example which compiles with not more than 850 bytes of flash size.*
 
 > **Currently supports Common-Cathode 4-digit 7-segment displays.**
 
@@ -21,7 +21,7 @@ This library assumes a standard 4-digit multiplexed configuration. The segments 
 
 
 
-[Image of 4-digit 7-segment display multiplexing circuit]
+![Wiring Diagram](C:\Users\USER\Downloads\Telegram_Desktop\photo_2026-04-08_16-36-53.jpg)
 
 
 ### Connection Mapping
@@ -103,9 +103,9 @@ int main(void) {
 ## Why Use 4D_7S Over Standard Implementations?
 The library offers various advantages and features over others, and it was inspired from not seeing/using a similar version of it.
 
-* **$98\%$(percent) Reduction in Logic Execution Time**: By bypassing the Arduino abstraction layer and using direct register manipulation, segment switching is nearly instantaneous compared to `digitalWrite()` multiplexing.
+* **`98%` Reduction in Logic Execution Time**: By bypassing the Arduino abstraction layer and using direct register manipulation, segment switching is nearly instantaneous compared to `digitalWrite()` multiplexing.
 
-* **$99.8\%$(percent) Background Transparency**: Because the library is interrupt-driven, $99.8\%$(percent) of CPU cycles remain available for the user's primary application logic (sensors, math, communication).
+* **`99.8%` Background Transparency**: Because the library is interrupt-driven, `99.8%` of CPU cycles remain available for the user's primary application logic (sensors, math, communication).
 
 * **Constant-Time Performance (O(1))**: Unlike delay-based code where CPU usage scales with display complexity, your overhead remains a flat, negligible fraction of total clock cycles.
 
