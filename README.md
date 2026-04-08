@@ -103,11 +103,11 @@ int main(void) {
 ## Why Use 4D_7S Over Standard Implementations?
 The library offers various advantages and features over others, and it was inspired from not seeing/using a similar version of it.
 
-* **$98\%$ Reduction in Logic Execution Time**: By bypassing the Arduino abstraction layer and using direct register manipulation, segment switching is nearly instantaneous compared to `digitalWrite()` multiplexing.
+* **$98\%$(percent) Reduction in Logic Execution Time**: By bypassing the Arduino abstraction layer and using direct register manipulation, segment switching is nearly instantaneous compared to `digitalWrite()` multiplexing.
 
-* **$99.8\%$ Background Transparency**: Because the library is interrupt-driven, $99.8\%$ of CPU cycles remain available for the user's primary application logic (sensors, math, communication).
+* **$99.8\%$(percent) Background Transparency**: Because the library is interrupt-driven, $99.8\%$(percent) of CPU cycles remain available for the user's primary application logic (sensors, math, communication).
 
-* **Constant-Time Performance ($O(1)$)**: Unlike delay-based code where CPU usage scales with display complexity, your overhead remains a flat, negligible fraction of total clock cycles.
+* **Constant-Time Performance (O(1))**: Unlike delay-based code where CPU usage scales with display complexity, your overhead remains a flat, negligible fraction of total clock cycles.
 
 * **Improved Code Readability**: Because a user/programmer only needs to make three function calls to configure the display, and with clear self-explanatory function name, it reduces learning complexity for beginners while speeding up coding time for mature programmers (because of the function call minimalism).
 
@@ -117,6 +117,7 @@ The library offers various advantages and features over others, and it was inspi
 
 ## Credits
 Maintained by: Dauda Muazu Sulaiman
+
 Affiliation: [KibrisOrder](https://ss.kibrisorder.com)
 
 Special thanks to **KibrisOrder** for supporting the development of high-performance embedded drivers.
