@@ -14,7 +14,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 * Planned: Support for Common Anode displays via a configuration macro.
 
 ### Fixed
-* (List bugs you've fixed since the 1.0.0 release)
+* (List of bugs fixed since the 1.0.0 release)
 
 ## [1.0.0] - 2026-04-08
 
